@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200710204740_initial.cs" />
+    <Compile Remove="Migrations\20200710204740_initial.Designer.cs" />
+    <Compile Remove="Migrations\20200712150903_initial.cs" />
+    <Compile Remove="Migrations\20200712150903_initial.Designer.cs" />
+    <Compile Remove="Migrations\20200712162224_initial.cs" />
+    <Compile Remove="Migrations\20200712162224_initial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="jQuery.UI.Combined" Version="1.12.1" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">

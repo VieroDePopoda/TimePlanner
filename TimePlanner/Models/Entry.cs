@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace TimePlanner.Models
@@ -22,5 +23,8 @@ namespace TimePlanner.Models
 
         [Display(Name = "Место встречи")]
         public string Place { get; set; }
+
+        [DefaultValue(false)]
+        public bool IsCompleted { get; set; }
     }
 }

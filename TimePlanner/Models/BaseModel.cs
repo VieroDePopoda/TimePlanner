@@ -7,6 +7,5 @@ namespace TimePlanner.Models
     {
         [Key]
         public Guid Id { get; set; }
-        public bool IsCompleted { get; set; }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AskAlexandria\\source\\repos\\TimePlanner\\TimePlanner\\TimePlanner.csproj": {}
+    "C:\\Users\\AskAlexandria\\TimePlanner\\TimePlanner\\TimePlanner.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AskAlexandria\\source\\repos\\TimePlanner\\TimePlanner\\TimePlanner.csproj": {
+    "C:\\Users\\AskAlexandria\\TimePlanner\\TimePlanner\\TimePlanner.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AskAlexandria\\source\\repos\\TimePlanner\\TimePlanner\\TimePlanner.csproj",
+        "projectUniqueName": "C:\\Users\\AskAlexandria\\TimePlanner\\TimePlanner\\TimePlanner.csproj",
         "projectName": "TimePlanner",
-        "projectPath": "C:\\Users\\AskAlexandria\\source\\repos\\TimePlanner\\TimePlanner\\TimePlanner.csproj",
+        "projectPath": "C:\\Users\\AskAlexandria\\TimePlanner\\TimePlanner\\TimePlanner.csproj",
         "packagesPath": "C:\\Users\\AskAlexandria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AskAlexandria\\source\\repos\\TimePlanner\\TimePlanner\\obj\\",
+        "outputPath": "C:\\Users\\AskAlexandria\\TimePlanner\\TimePlanner\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AskAlexandria\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.5, )"
@@ -51,6 +55,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.5, )"
+            },
+            "jQuery.UI.Combined": {
+              "target": "Package",
+              "version": "[1.12.1, )"
             }
           },
           "imports": [
