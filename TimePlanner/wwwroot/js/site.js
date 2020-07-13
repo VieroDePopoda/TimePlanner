@@ -93,3 +93,38 @@ function selectValueChanged() {
         $("#placeValidation").prop("disabled", true);
     }
 }
+
+function filterByDate() {//скрываем записи, которые не проходят фильтр
+    var dateFilter = $('#dateFilter').val();
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+    today = yyyy + '-' + mm + '-' + dd;
+
+    if (dateFilter == "День") {
+        $('#tableBody tr').filter(function () {
+            $(this).toggle($(this).text().indexOf(today) > -1)
+        });
+    }
+
+    if (dateFilter == "Месяц") {
+        $('#tableBody tr').filter(function () {
+            $(this).toggle($(this).text().indexOf(yyyy + '-' + mm) > -1)
+        });
+    }
+
+    if (dateFilter == "Список") {
+        $('#tableBody tr').filter(function () {
+            $(this).toggle($(this).text().indexOf('') > -1)
+        });
+    }
+
+}
+
+function searchFilter() { //скрываем записи, которые не проходят фильтр
+    var search = $('#search').val().toLowerCase();
+    $('#tableBody tr').filter(function () {
+        $(this).toggle($(this).text().toLowerCase().indexOf(search) > -1)
+    });
+}

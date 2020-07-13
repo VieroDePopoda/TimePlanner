@@ -1,6 +1,22 @@
 ﻿@{
     ViewData["Title"] = "Ежедневник";
 }
+
+    <div class="row">
+        <div class="col-4">
+            <label class="form-control-plaintext">Отобразить за</label>
+            <select class="form-control" id="dateFilter" onchange="filterByDate()">
+                <option>День</option>
+                <option>Месяц</option>
+                <option selected>Список</option>
+            </select>
+        </div>
+        <div class="col-4">
+            <label class="form-control-plaintext">Поиск</label>
+            <input type="text" class="form-control" id="search" onkeyup="searchFilter()" />
+        </div>
+    </div>
+
     <table class="table">
         <thead>
             <tr>
@@ -13,5 +29,6 @@
                 <th></th>
             </tr>
         </thead>
-        <tbody id="tableBody"></tbody>
+        <tbody id="tableBody">
+        </tbody>
     </table>
